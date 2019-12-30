@@ -27,10 +27,10 @@ try:
     font15 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 15)
     font24 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 24)
     # Drawing on the Horizontal image
-    logging.info("1.Drawing on the Horizontal image...")
-    Himage = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
-    draw = ImageDraw.Draw(Himage)
-    draw.rectangle([(0,0),(50,50)],outline = 0)
+    # logging.info("1.Drawing on the Horizontal image...")
+    # Himage = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
+    # draw = ImageDraw.Draw(Himage)
+    # draw.rectangle([(0,0),(50,50)],outline = 0)
     """
     draw.rectangle([(55,0),(100,50)],fill = 0)
     draw.line([(0,0),(50,50)], fill = 0,width = 1)

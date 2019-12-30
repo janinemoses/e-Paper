@@ -31,6 +31,7 @@ try:
     Himage = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
     draw = ImageDraw.Draw(Himage)
     draw.rectangle([(0,0),(50,50)],outline = 0)
+    """
     draw.rectangle([(55,0),(100,50)],fill = 0)
     draw.line([(0,0),(50,50)], fill = 0,width = 1)
     draw.line([(0,50),(50,0)], fill = 0,width = 1)
@@ -42,6 +43,7 @@ try:
     draw.polygon([(190,0),(190,50),(150,25)],fill = 0)
     draw.text((110, 60), 'e-Paper demo', font = font15, fill = 0)
     draw.text((110, 80), u'微雪电子', font = font15, fill = 0)
+    """
     epd.display(epd.getbuffer(Himage))
     time.sleep(2)
         
